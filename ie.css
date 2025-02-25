@@ -1,0 +1,10 @@
+div.block1,
+#search-form textarea{behavior: url(js/PIE.htc); position:relative;}
+
+h1 a {margin-top:-18px;}
+
+#banners > div{padding-top:54px;}
+	#banners h2 strong{margin-top:-29px;}
+		#banners h2 em{margin-top:-88px;}
+
+#contact-form input, #contact-form textarea {padding:10px 15px 4px;}

@@ -1,0 +1,661 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+
+/******************************* Global properties ***************************/
+html {width:100%;}
+
+body {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size:100%; 
+color:#868686;
+min-width:960px;
+background:url(/body-tail.gif) center top repeat;
+}
+
+html, body {height:100%;}
+
+.bg{
+background:url(/body-light.png) center top no-repeat;
+min-height:100%;
+}
+
+.main {
+width:960px;
+padding:0;
+margin:0 auto;
+font-size:12px;
+line-height:20px;
+text-transform:uppercase;
+}
+
+/***menu1***/
+.menu1{
+float:left;
+padding-top:6px;
+}
+.menu1 li{
+float:left;
+font-size:11px;
+line-height:14px;
+height:18px;
+padding-top:3px;
+overflow:hidden;
+}
+.menu1 .item-1{
+background:url(http://static.livedemo00.template-help.com/wt_37810/images/menu1-icon1.png) 0 0 no-repeat;
+padding-left:29px;
+margin-right:18px;
+}
+.menu1 .item-1 span{
+display:block;
+background:url(../images/pic1.gif) right 4px no-repeat;
+padding-right:16px;
+min-height:15px;
+}
+.menu1 .item-2{
+background:url(../images/menu1-icon2.png) 0 2px no-repeat;
+padding-left:30px;
+}
+.menu1 a{color:#383838;}
+
+/********* social icons *********/
+.works-list{
+margin:0;
+list-style:none;
+float:right;
+}
+.works-list li{
+float:left;
+margin-right:6px;
+}
+.works-list li a{
+display:block;
+height:30px;
+width:30px;
+background-image: url(../images/social-icons.png);
+background-repeat: no-repeat;
+cursor:pointer;
+}
+.icon-1 a{background-position:0 top;}		.icon-1 a:hover{background-position:0 bottom;}
+.icon-2 a{background-position:-36px top;}	.icon-2 a:hover{background-position:-36px bottom;}
+.icon-3 a{background-position:-72px top;}	.icon-3 a:hover{background-position:-72px bottom;}
+
+#easyTooltip{
+padding:0 10px 0;
+background:#fd7f34;
+color:#fff;
+font-weight:800;
+font-size:11px; 
+line-height:2em;
+text-transform: uppercase;
+position:relative;
+z-index:1000;
+}
+
+/***logo***/
+h1{
+background:url(/logo-bg.png) 0 0 no-repeat;
+padding-left:62px;
+font-size:75px;
+line-height:90px;
+}
+h1 a {
+display:inline-block;
+margin-top:-15px;
+}
+h1 a:hover{text-decoration:none;}
+h1 strong{color:#383838;}
+
+/************ menu ************/
+nav {
+position:relative;
+z-index:999;
+float:right;
+}
+
+.menu {
+padding-top:20px;
+}
+.menu >
+li {
+float:left; 
+position:relative;
+font-size:15px;
+line-height:18px;
+margin-right:18px;
+}
+.menu >
+li >
+a {
+display:inline-block;
+color:#383838;
+text-decoration:none;
+cursor:pointer;
+}
+.menu li a.active,
+.menu >
+li >
+a:hover,
+.menu >
+li.sfHover >
+a{
+color:#fd7f34; 
+text-decoration:none;
+}
+
+/**submenu**/
+.menu >
+li >
+a .sf-sub-indicator{
+display:block;
+width:11px;
+height:6px;
+background:url(../images/submenu-arrow.gif) center 0 no-repeat;
+position:absolute;
+top:-999em;
+left:38px;
+text-indent:-999em;
+}
+.menu >
+li.sfHover >
+a .sf-sub-indicator{top:29px;}
+.menu ul {
+position:absolute;
+padding:14px 10px 12px;
+top:-999em;
+background:#383838;
+}
+.menu ul li {
+width:100%;
+text-align:center;
+font-size:12px;
+line-height:15px;
+margin-bottom:5px;
+position:relative;
+}
+.menu li:hover {visibility: inherit;}
+.menu li li a {
+display: inline-block;
+color:#fff;
+text-decoration:none;
+white-space:nowrap;
+}
+.menu li li >
+a:hover, 
+.menu li li.sfHover >
+a,
+.menu li li li a:hover {
+color:#fd7f34;
+text-decoration:none;
+}
+.menu li:hover ul, .menu li.sfHover ul {
+left:24px;
+top:35px;
+z-index:999;
+}
+.menu ul .sf-sub-indicator {display:none;}
+
+/*subsubmenu*/
+.menu ul ul{background:#fd7f34;}
+.menu ul ul li >
+a:hover{color:#383838;}
+ul.menu li:hover li ul, ul.menu li.sfHover li ul {top:-999em;}
+ul.menu li li:hover ul, ul.menu li li.sfHover ul {
+left:136px;
+top:-14px;
+z-index:9999;
+}
+ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {top:-999em;}
+
+/***************** scroller****************/
+#banners {
+position:relative;
+z-index:2;
+width:100%;
+height:438px;
+overflow:hidden;
+color:#9c9c9c;
+font-size:12px;
+line-height:20px;
+text-align:center;
+}
+#banners >
+div{
+width:100%;
+padding-top:57px;
+background:url(../images/banners-bg.jpg) center top no-repeat;
+}
+#banners h2{
+font-size:60px;
+line-height:72px;
+color:#b8b8b8;
+margin-bottom:19px;
+}
+#banners h2 strong{
+display:block;
+margin-top:-25px;
+font-size:120px;
+line-height:144px;
+color:#383838;
+}
+#banners h2 em{
+display:block;
+margin-top:-87px;
+font-size:40px;
+line-height:48px;
+}
+#nav {
+position:absolute;
+top:374px;
+right:0px;
+z-index:999;
+}
+#nav a {
+float:left;
+margin-left:10px;
+text-indent:-5000px;
+display:block;
+height:22px;
+width:22px;
+background: url(../images/pagination.png) top right no-repeat;
+}
+#nav a:hover {background-position: top left;}
+#nav a.activeSlide {
+background-position: top left;
+cursor:default;
+}
+
+/*****************************************content**********************************************/
+#content {
+width:100%; 
+position:relative;
+z-index:1;
+padding:0;
+}
+
+/*tags*/
+a {
+color:#fd7f34;
+outline:none;
+text-decoration:none;
+}
+a:hover {text-decoration:underline;}
+
+p, .p3-1{margin-bottom:18px;}
+.p0{margin-bottom:0 !important;}
+.p1{margin-bottom:5px;}
+.p1-1{margin-bottom:8px;}
+.p2{margin-bottom:10px;}
+.p2-1{margin-bottom:13px;}
+.p3{margin-bottom:15px;}
+.p4{margin-bottom:20px;}
+.p4-1{margin-bottom:23px;}
+.p5{margin-bottom:25px;}
+.p5-1{margin-bottom:27px;}
+.p6{margin-bottom:30px;}
+.p6-1{margin-bottom:32px;}
+.p7{margin-bottom:35px;}
+.p7-1{margin-bottom:37px;}
+
+h3{
+font-weight: normal;
+font-size:35px;
+line-height:42px;
+color:#383838;
+display:block;
+}
+h3.title1{
+float:left;
+margin-top:-11px;
+}
+h3 strong{
+display:block;
+margin-top:-12px;
+}
+
+h6{
+font:bold 15px/19px "Trebuchet MS", Arial, Helvetica, sans-serif;
+color:#383838;
+}
+h6 a{color:#383838;}
+h6.title1{
+display:inline;
+font:bold 12px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+color:inherit;
+}
+
+figure.img-indent {float:left; margin-right:20px;}
+figure.img-indent2 {float:left; margin-right:10px;}
+
+/*classes*/
+.wrapper {width:100%; overflow:hidden;position:relative;}
+.extra-wrap {overflow:hidden;}
+
+.fleft{float:left;}
+.fright{float:right;}
+.aligncenter{text-align:center;}
+.alignright{text-align:right;}
+
+.button{
+display:inline-block;
+background:#383838;
+padding:8px 12px;
+font-size:15px;
+line-height:18px;
+color:#fff;
+cursor:pointer;
+}
+.button:hover{text-decoration:none; background-color:#fd7f34;}
+
+/*******/
+div.block1{
+margin:0 auto 16px;
+width:136px;
+height:117px;
+padding-top:19px;
+font-size:75px;
+line-height:90px;
+color:#fff;
+text-align:center;
+border-radius:100%;
+-moz-border-radius:100%;
+-webkit-border-radius:100%;
+}
+div.block1.bg-color1{background:#fd7f34;}
+div.block1.bg-color2{background:#d6d6d6;}
+div.block1.bg-color3{background:#f1de10;}
+div.block1.bg-color4{background:#656363;}
+
+div.block2{
+float:right;
+background:url(/icon-1.png) right 1px no-repeat;
+padding-right:43px;
+font: italic 23px/30px "Trebuchet MS", Arial, Helvetica, sans-serif;
+color:#383838;
+text-transform:none;
+min-height:31px
+}
+
+/***************boxes****************/
+.box1{
+background:#fff;
+text-align:center;
+}
+.box1 .indents1{padding:32px 15px 29px;}
+.box1 h2{
+font-size:60px;
+line-height:72px;
+color:#383838;
+}
+.box1 .subtitle{
+margin-top:-10px;
+font-size:29px;
+line-height:35px;
+color:#a5a5a5;
+margin-bottom:16px;
+}
+.box1 .subtitle em{
+display:inline-block;
+vertical-align:-1px;
+font-size:20px;
+line-height:24px;
+color:#c9c7c7;
+}
+.box1 .button{background:#a5a5a5;}
+.box1 .button:hover{background-color:#fd7f34;}
+#page2 .box1 .button{padding: 8px 23px;}
+
+.box2{
+background:#e3e3e3;
+border:1px solid #383838;
+font-size:25px;
+line-height:30px;
+text-align:center;
+height:217px;
+overflow:hidden;
+}
+#page4 .box2{height:82px;}
+.box2 .indents1{padding:22px 0 36px;}
+.box2 .indents2{padding:17px 18px 0;}
+.box2 a.block4{display:block; color:#383838;}
+.box2 a.block4 strong{display:block; margin-top:-8px;}
+.box2 a.block4:hover{text-decoration:none; color:#fd7f34;}
+.box2 .font-1{font:normal 13px/18px "Trebuchet MS", Arial, Helvetica, sans-serif; text-align:left; color:#383838;}
+
+/****************lists***************/
+.last-item{margin-right:0 !important; margin-bottom:0 !important;}
+
+.list-1{padding-left:34px;}
+.list-1 li{
+background:url(/marker-1.gif) 0 4px no-repeat;
+padding-left:12px;
+margin-bottom:7px;
+text-align:left;
+font-size:12px;
+line-height:15px;
+color:#000;
+}
+
+.list-2{padding-right:20px;}
+.list-2 li{
+background:url(http://static.livedemo00.template-help.com/wt_37810/images/marker-2.gif) 0 7px no-repeat;
+padding-left:20px;
+margin-bottom:26px;
+color:#828282;
+}
+
+.list-3 li{
+background:url(http://static.livedemo00.template-help.com/wt_37810/images/marker-3.png) 0 4px no-repeat;
+padding-left:11px;
+margin-bottom:7px;
+text-align:left;
+font-size:12px;
+line-height:15px;
+color:#000;
+}
+.list-3 a{color:#000;}
+.list-3 a:hover{text-decoration:none; color:#fd7f34;}
+
+/**************borders**************/
+.border-bottom{border-bottom:1px solid #b8b8b8;}
+.border-bottom1{border-bottom:3px solid #cccccc;}
+
+/**************indents**************/
+.indent-top1{padding-top:5px;}
+.indent-top3{padding-top:15px;}
+.indent-top6-1{padding-top:33px;}
+.indent-top9{padding-top:45px;}
+
+.indent-right2{padding-right:10px;}
+.indent-right16{padding-right:80px;}
+
+.indent-bottom5-1{padding-bottom:28px;}
+.indent-bottom8{padding-bottom:40px;}
+.indent-bottom8-1{padding-bottom:42px;}
+.indent-bottom9-1{padding-bottom:48px;}
+.indent-bottom10{padding-bottom:50px;}
+.indent-bottom10-1{padding-bottom:53px;}
+
+/***** search form *****/
+#search-form{
+width:100%;
+height:216px;
+position:relative;
+vertical-align:top;
+overflow:hidden;
+background:#e3e3e3;
+border:1px solid #383838;
+}
+#search-form fieldset.block1 {
+background:#fff;
+border:none;
+border-right:1px solid #383838;
+padding:13px 12px 20px 26px;
+float:left;
+width:647px;
+}
+#search-form fieldset.block1 .p2{margin-bottom:11px;}
+#search-form h5{
+font: normal 18px/22px "Trebuchet MS", Arial, Helvetica, sans-serif;
+color:#343434;
+margin-bottom:5px;
+}
+#search-form label {
+text-transform:none;
+font:13px/16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+color:#858585;
+}
+#search-form label.keywords{float:left; margin-right:31px; height:108px;}
+#search-form textarea{
+padding:9px;
+margin:0;
+font: 13px/16px Arial, Helvetica, sans-serif;
+color:#858585;
+background:#fff;
+outline:none;
+border:1px solid #cdcdcd;
+width:258px;
+max-width:258px;
+min-width:258px;
+height:88px;
+max-height:88px;
+min-height:88px;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+overflow:auto;
+}
+#search-form .col-1{
+float:left;
+width:77px;
+margin-right:10px;
+}
+#search-form .button{background:#a5a5a5; padding:8px 11px;}
+#search-form .button:hover{background-color:#fd7f34;}
+#search-form .block1 .button:first-child{margin-right:10px;}
+
+span.jqTransformCheckboxWrapper{
+display:block;
+float:left;
+margin-right:8px;
+}
+a.jqTransformCheckbox {
+display:block;
+background: url(../images/checkbox.jpg) center bottom no-repeat ;
+vertical-align: middle;
+height: 16px;
+width: 16px;
+}
+
+/* Checked */
+a.jqTransformChecked { background-position: center top;}
+
+/* hide the original form elements */
+.jqTransformHidden {display: none;}
+
+#search-form fieldset.block2 {
+float:right;
+border-bottom:1px solid #383838;
+padding:15px 27px 0;
+width:200px;
+height:66px;
+overflow:hidden;
+}
+#search-form fieldset.block2 h5{font: bold 15px/18px "Trebuchet MS", Arial, Helvetica, sans-serif; margin-bottom:7px;}
+#search-form fieldset.block2 a{font: 15px/18px "Trebuchet MS", Arial, Helvetica, sans-serif; text-decoration:underline;}
+#search-form fieldset.block2 a:hover{text-decoration:none;}
+#search-form fieldset.block3 {
+float:right;
+padding:22px 27px 0;
+width:200px;
+overflow:hidden;
+}
+#search-form fieldset.block3 h5{font: bold 15px/18px "Trebuchet MS", Arial, Helvetica, sans-serif; margin-bottom:11px;}
+#search-form fieldset.block3 a{
+display:inline-block;
+font-size:36px;
+line-height:44px;
+color:#fff;
+background:#fd7f34;
+padding: 7px 28px 12px;
+cursor:pointer;
+}
+#search-form fieldset.block3 a:hover{text-decoration:none; background-color:#a5a5a5;}
+
+/***** contact form *****/
+#contact-form {
+position:relative;
+vertical-align:top;
+width:100%;
+z-index:1;
+}
+#contact-form fieldset {border:none;padding:0;}
+#contact-form label {display:block;min-height:50px;}
+#contact-form .message{min-height:175px;}
+#contact-form input, #contact-form textarea {
+padding:7px 15px 7px;
+margin:0;
+font:12px/12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+color:#919191;
+text-transform:uppercase;
+background:#fff;
+outline:none;
+border:1px solid #b3b3b3;
+width:188px;
+}
+#contact-form .area .error {float:none;}
+#contact-form textarea {
+line-height:15px;
+padding-top:8px;
+width:348px;
+max-width:348px;
+min-width:348px;
+height:147px;
+max-height:147px;
+overflow:auto;
+}
+#contact-form .success {display:none; margin-bottom:20px;}
+#contact-form .error,
+#contact-form .empty {
+color:#f00;
+font-size:11px;
+line-height:1.27em;
+display:none;
+overflow:hidden;
+}
+.buttons-wrapper{text-align:right;}
+.buttons-wrapper a {margin-left:6px; cursor:pointer; padding:8px 20px;}
+.buttons-wrapper a:first-child{padding:8px 16px;}
+
+/*****map*****/
+dl span {float:left; width:94px;}
+
+
+/****************************footer************************/
+footer{
+width:100%;
+color:#5c5c5c;
+}
+footer .indents{padding:26px 10px 65px;}
+
+.footer-menu{
+display:block;
+margin-bottom:9px;
+overflow:hidden;
+}
+.footer-menu li{
+float:left;
+font-size:13px;
+line-height:16px;
+margin-right:14px;
+}
+.footer-menu a{color:#5b5b5b;}
+.footer-menu a:hover, .footer-menu a.active{color:#fd7f34; text-decoration:none;}
+
+.footer-text{
+text-align:right;
+font:10px/12px Arial, Helvetica, sans-serif;
+}
+.footer-text a{color:#5c5c5c; text-decoration:none;}
+.footer-text a:hover{text-decoration:underline;}
